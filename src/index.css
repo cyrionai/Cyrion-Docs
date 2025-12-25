@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cyrion-50: #f0fdfa;
+  --color-cyrion-100: #ccfbf1;
+  --color-cyrion-200: #99f6e4;
+  --color-cyrion-300: #5eead4;
+  --color-cyrion-400: #2dd4bf;
+  --color-cyrion-500: #14b8a6;
+  --color-cyrion-600: #0d9488;
+  --color-cyrion-700: #0f766e;
+  --color-cyrion-800: #115e59;
+  --color-cyrion-900: #134e4a;
+  --color-cyrion-950: #042f2e;
+
+  --color-dark-900: #0a0f14;
+  --color-dark-800: #0d1117;
+  --color-dark-700: #161b22;
+  --color-dark-600: #1c2128;
+  --color-dark-500: #21262d;
+  --color-dark-400: #30363d;
+  --color-dark-300: #484f58;
+  --color-dark-200: #6e7681;
+  --color-dark-100: #8b949e;
+
+  --color-accent-cyan: #00c7b7;
+  --color-accent-blue: #58a6ff;
+  --color-accent-purple: #a371f7;
+  --color-accent-pink: #f778ba;
+  --color-accent-orange: #ffa657;
+  --color-accent-yellow: #e3b341;
+  --color-accent-green: #3fb950;
+  --color-accent-red: #f85149;
+
+  --font-sans: "Inter", "system-ui", "-apple-system", "sans-serif";
+  --font-mono: "JetBrains Mono", "Fira Code", "monospace";
+}
+
+@layer base {
+  body {
+    @apply bg-dark-900 text-white font-sans selection:bg-accent-cyan/30;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-dark-500 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-dark-400;
+  }
+}
+
+@layer components {
+  .prose-custom {
+    @apply text-dark-100 leading-relaxed;
+  }
+  .prose-custom h1 {
+    @apply text-3xl font-bold text-white mt-8 mb-4 tracking-tight;
+  }
+  .prose-custom h2 {
+    @apply text-xl font-semibold text-white mt-10 mb-4 border-b border-dark-500 pb-2 tracking-tight;
+  }
+  .prose-custom h3 {
+    @apply text-lg font-semibold text-white mt-8 mb-2 tracking-tight;
+  }
+  .prose-custom p {
+    @apply my-4;
+  }
+  .prose-custom ul {
+    @apply list-disc list-inside my-4 space-y-2;
+  }
+  .prose-custom code {
+    @apply px-1.5 py-0.5 rounded bg-dark-700 text-accent-cyan font-mono text-sm border border-dark-500;
+  }
+  .prose-custom pre {
+    @apply my-6 rounded-xl border border-dark-500 overflow-hidden;
+    background-color: #0d1117 !important;
+  }
+  .prose-custom a {
+    @apply text-accent-cyan hover:underline decoration-accent-cyan/30 underline-offset-4;
+  }
+  .prose-custom blockquote {
+    @apply pl-4 border-l-4 border-accent-cyan/50 bg-accent-cyan/5 my-6 py-2 italic text-dark-200 rounded-lg;
+  }
+  .prose-custom table {
+    @apply w-full my-8 border-collapse border border-dark-500 rounded-lg overflow-hidden;
+  }
+  .prose-custom th {
+    @apply bg-dark-700 text-left p-3 text-sm font-semibold border-b border-dark-500;
+  }
+  .prose-custom td {
+    @apply p-3 text-sm border-b border-dark-500;
+  }
+}
+
+.gradient-mask {
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
