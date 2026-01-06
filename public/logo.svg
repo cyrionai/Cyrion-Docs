@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00c7b7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00a89b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer gear shape -->
+  <path d="M100 20 L112 35 L130 30 L135 50 L155 55 L150 75 L170 85 L160 100 L170 115 L150 125 L155 145 L135 150 L130 170 L112 165 L100 180 L88 165 L70 170 L65 150 L45 145 L50 125 L30 115 L40 100 L30 85 L50 75 L45 55 L65 50 L70 30 L88 35 Z"
+        stroke="url(#glowGradient)"
+        stroke-width="2"
+        fill="none"/>
+
+  <!-- Inner circle -->
+  <circle cx="100" cy="100" r="45" stroke="url(#glowGradient)" stroke-width="2" fill="none"/>
+
+  <!-- Alert triangle -->
+  <path d="M100 65 L125 115 L75 115 Z" stroke="url(#glowGradient)" stroke-width="2" fill="none" stroke-linejoin="round"/>
+
+  <!-- Exclamation mark -->
+  <line x1="100" y1="78" x2="100" y2="98" stroke="#00c7b7" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="100" cy="107" r="2.5" fill="#00c7b7"/>
+
+  <!-- Connection nodes -->
+  <circle cx="100" cy="20" r="4" fill="#00c7b7"/>
+  <circle cx="170" cy="85" r="4" fill="#00c7b7"/>
+  <circle cx="170" cy="115" r="4" fill="#00c7b7"/>
+  <circle cx="100" cy="180" r="4" fill="#00c7b7"/>
+  <circle cx="30" cy="85" r="4" fill="#00c7b7"/>
+  <circle cx="30" cy="115" r="4" fill="#00c7b7"/>
+
+  <!-- Connection lines extending outward -->
+  <line x1="100" y1="12" x2="100" y2="5" stroke="#00c7b7" stroke-width="1.5"/>
+  <line x1="178" y1="85" x2="190" y2="85" stroke="#00c7b7" stroke-width="1.5"/>
+  <line x1="178" y1="115" x2="190" y2="115" stroke="#00c7b7" stroke-width="1.5"/>
+  <line x1="100" y1="188" x2="100" y2="195" stroke="#00c7b7" stroke-width="1.5"/>
+  <line x1="22" y1="85" x2="10" y2="85" stroke="#00c7b7" stroke-width="1.5"/>
+  <line x1="22" y1="115" x2="10" y2="115" stroke="#00c7b7" stroke-width="1.5"/>
+
+  <!-- Small square nodes at line ends -->
+  <rect x="96" y="1" width="8" height="8" fill="#00c7b7" rx="1"/>
+  <rect x="186" y="81" width="8" height="8" fill="#00c7b7" rx="1"/>
+  <rect x="186" y="111" width="8" height="8" fill="#00c7b7" rx="1"/>
+  <rect x="96" y="191" width="8" height="8" fill="#00c7b7" rx="1"/>
+  <rect x="6" y="81" width="8" height="8" fill="#00c7b7" rx="1"/>
+  <rect x="6" y="111" width="8" height="8" fill="#00c7b7" rx="1"/>
+</svg>

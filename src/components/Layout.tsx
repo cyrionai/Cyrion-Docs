@@ -226,11 +226,9 @@ export default function Layout({ children, headings = [] }: LayoutProps) {
             {isSidebarOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
           <Link to="/" className="flex items-center gap-2.5">
-            <div className="w-8 h-8 bg-accent-cyan rounded-lg flex items-center justify-center">
-              <Shield className="text-dark-900 w-5 h-5 fill-current" />
-            </div>
+            <img src="/logo.svg" alt="Cyrion AI" className="w-8 h-8" />
             <span className="font-bold text-xl tracking-tight hidden sm:inline-block">
-              Cyrion <span className="text-accent-cyan">Docs</span>
+              Cyrion <span className="text-accent-cyan">AI</span>
             </span>
           </Link>
         </div>
